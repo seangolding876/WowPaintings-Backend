@@ -7,11 +7,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const PRICE_MAP = {
-  "price_50GBP": "price_50GBP",
-  "price_100GBP": "price_100GBP",
-  "price_150GBP": "price_150GBP"
-};
+const PRICE_MAP = {'price_50GBP': 'price_1Rjs22FQ3ErAgLFwuNWHr6WE', 'price_100GBP': 'price_1Rjs2NFQ3ErAgLFwL7RztyQU', 'price_150GBP': 'price_1Rjs2gFQ3ErAgLFwRRcSpAYD'};
 
 app.post("/create-checkout-session", async (req, res) => {
   const { priceId } = req.body;
